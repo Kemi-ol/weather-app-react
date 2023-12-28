@@ -60,3 +60,7 @@ bottom: -30px;
   color: white;
   background-color: purple;
 }
+li{
+  padding: 5px;
+  font-size:15px;
+}
