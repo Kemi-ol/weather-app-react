@@ -103,26 +103,26 @@ export default function Weather() {
         </div>
       </div>
       <div className="forecast-container">
-        <div className="row">
-        {daily.slice(0,6).map((day, index) => (// loop through the array index 0 until 5
-            <div key={index} className="col-2">
-              <strong>{new Date(day.time*1000).toLocaleDateString("en-GB", { weekday: "short" })}</strong> 
-              <img
-                src={day.condition.icon_url}
-                width="100"
-                height="100"
-                alt="weather icon"
-              />
-              <div>
-                <span className="weather-forecast-temp-max">
-                  <strong>{Math.round(day.temperature.maximum)}º</strong>
-                </span>
-                <span className="weather-forecast-temp-min">{Math.round(day.temperature.minimum)}º</span>
-              </div>
-            </div>
-          ))}
+  <div className="row">
+    {daily.slice(0, 6).map((day, index) => (
+      <div key={index} className="col-2">
+        <div className="forecast-day">
+          <strong>{new Date(day.time * 1000).toLocaleDateString("en-GB", { weekday: "short" })}</strong>
+        </div>
+        <img
+          src={day.condition.icon_url}
+          width="80"
+          height="80"
+          alt="weather icon"
+        />
+        <div className="weather-forecast-temp">
+          <span className="temp-max">{Math.round(day.temperature.maximum)}º</span>
+          <span className="temp-min">{Math.round(day.temperature.minimum)}º</span>
         </div>
       </div>
+    ))}
+  </div>
+</div>
     </div>
   );
 }
