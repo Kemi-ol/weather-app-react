@@ -80,7 +80,7 @@ export default function Weather() {
         <div className="row">
           <div className="col-3 city-name">
             <h1>{city}</h1>
-            <p className="text-muted">last updated: {lastUpdated.toLocaleString()}
+            <p className="date">last updated: {lastUpdated.toLocaleString()}
             </p>
           </div>
           <div className="col-6 weather-icon">
@@ -88,13 +88,16 @@ export default function Weather() {
               src={icon}
               alt="cloudy"
               className="main-icon"
+              width="100"
+          height="120"
             />
             <span className= "main-temp">{Math.round(temperature)}ºC</span>
+            <br />
             <p className="weather-description">{description}</p>
           </div>
           <div className="col-3 ">
             <ul className="city-weather-forecast">
-              <span className="text-muted">
+              <span >
                 <li>Humidity: {humidity}%</li>
                 <li>Wind: {Math.round(wind)}km/h</li>
               </span>
