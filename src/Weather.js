@@ -89,7 +89,7 @@ export default function Weather() {
               alt="cloudy"
               className="main-icon"
             />
-            <span>{Math.round(temperature)}ºC</span>
+            <span className= "main-temp">{Math.round(temperature)}ºC</span>
             <p className="weather-description">{description}</p>
           </div>
           <div className="col-3 ">
@@ -116,7 +116,7 @@ export default function Weather() {
           alt="weather icon"
         />
         <div className="weather-forecast-temp">
-          <span className="temp-max">{Math.round(day.temperature.maximum)}º</span>
+          <span className="temp-max">{Math.round(day.temperature.maximum)}º  </span> 
           <span className="temp-min">{Math.round(day.temperature.minimum)}º</span>
         </div>
       </div>

@@ -58,7 +58,9 @@ bottom: -30px;
 }
 li{
   padding: 5px;
-  font-size:15px;
+  font-size:20px;
+  font-style: italic;
+  font-weight: 600;
 }
 
 .forecast-container{
@@ -71,3 +73,24 @@ li{
   justify-content: space-around;
 }
 
+.weather-forecast-temp{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 40px;
+}
+
+.weather-description{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 40px;
+  text-align: center;
+}
+
+.main-temp{
+  font-size: 6em;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 40px;
+  margin-top: 0px;
+}
