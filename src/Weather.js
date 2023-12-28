@@ -89,7 +89,7 @@ export default function Weather() {
               alt="cloudy"
               className="main-icon"
               width="100"
-          height="120"
+          height="100"
             />
             <span className= "main-temp">{Math.round(temperature)}ºC</span>
             <br />
